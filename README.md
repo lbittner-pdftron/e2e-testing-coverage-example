@@ -18,10 +18,5 @@ All files |     100 |      100 |     100 |     100 |
  App.jsx  |     100 |      100 |     100 |     100 |                   
  main.jsx |     100 |      100 |     100 |     100 |                   
 
-
-## Example 1: Untested code is reported as tested if it is executed in the browser
-
 Notice that in App.tsx, there is an untested useEffect that is not called by the E2E tests, but the line coverage is still 100%. This is because the coverage is based on Javascript that is executed in the browser, and the useEffect is executed when the component is rendered, regardless of whether it is called by the E2E tests or not. This is why line coverage is not a good metric for E2E tests, and why it can be misleading.
-
-## Example 2:
 
